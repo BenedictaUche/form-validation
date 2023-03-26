@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="picture">
+                <div class="text">
+                    <p>Lucy's Brand</p>
+                </div>
+            </div>
+            <div class="form">
+                <h1>Sign up form</h1>
+                <h2>Let's do this!</h2>
+                <form>
+                    <div class="one">
+                        <div>
+                            <div>
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+                        <div style="margin-left: 4%;">
+                            <div>
+                                <label for="last_name">Last Name</label>
+                            </div>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div>
+                            <div>
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div style="margin-left: 4%;">
+                            <div>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div>
+                            <div>
+                                <label for="password">Password</label>
+                            </div>
+                            <input type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$
+" id="password" id="password" class="password" required>
+                        </div>
+                        <div style="margin-left: 4%;">
+                            <div>
+                                <label for="confirm_password" id="confirm-password">Confirm Password</label>
+                            </div>
+                            <input type="password" id="confirm_password" class="confirm-password" required>
+                            <div id="password-error" style="color: red; display: none;">
+                                <!-- <p>Passwords do not match.</p>
+                                <ul>
+                                    <li>At least one lowercase</li>
+                                    <li>At least one uppercase</li>
+                                    <li>At least one digit</li>
+                                    <li>At least one special character (?,!,#,/)</li>
+                                </ul> -->
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </form>
+                <button type="submit" class="button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture {
+    background: url('https://images.unsplash.com/photo-1676446547562-613597f00cf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.picture .text {
+    background-color: white;
+    margin-top: 50%;
+    background: transparent;
+    color: white;
+
+}
+
+.picture .text p {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: medium;
+    font-style: italic;
+    letter-spacing: 7px;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+}
+
+.form {
+    margin-right: 15%;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+h1 {
+    margin: 7% 0;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    margin-bottom: 4%;
+    font-family: 'Playfair Display', serif;
+}
+
+form input {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 2%;
+    border: 2px solid #2b2b2b;
+}
+
+form input:focus {
+    border: 1px solid lightblue;
+}
+
+/* form .three input:valid {
+    border-color: lightgreen;
+}
+
+form .three input:invalid {
+    border-color: red;
+} */
+
+
+
+button {
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    font-weight: bold;
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 4%;
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: all 300ms ease-in-out;
+}
